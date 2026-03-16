@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>RowXia</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+<h1>🚣 RowXia</h1>
+<p>Understand your stroke.</p>
+
+<div class="card">
+
+<h2>Upload Ergometer Data</h2>
+
+<input type="file" id="ergFile">
+<button onclick="loadErg()">Analyze</button>
+
+<canvas id="ergChart"></canvas>
+
+</div>
+
+<div class="card">
+
+<h2>Upload Rowing Video</h2>
+
+<input type="file" id="videoFile" accept="video/*">
+<button onclick="loadVideo()">Preview</button>
+
+<video id="videoPlayer" controls></video>
+
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>
